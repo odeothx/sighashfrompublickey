@@ -3,12 +3,6 @@
 version = 3
 
 [[package]]
-name = "base16ct"
-version = "0.1.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "349a06037c7bf932dd7e7d1f653678b2038b9ad46a74102f1fc7bd7872678cce"
-
-[[package]]
 name = "block-buffer"
 version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -83,7 +77,6 @@ dependencies = [
 name = "sighashfrompublickey"
 version = "0.1.0"
 dependencies = [
- "base16ct",
  "sha2",
 ]
 

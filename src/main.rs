@@ -16,6 +16,9 @@ fn main() -> Result<(), String>  {
         return Err("invalid argument".to_string());
     }
     let public_key = &args[1];
+    if args[1].len() != 66 {
+        return Err("invalid public key".to_string());
+    }
     //println!("public key : {:}", &args[1]);
     let hash = Sha512::digest(public_key.as_bytes());
 
